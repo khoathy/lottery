@@ -3,6 +3,10 @@
     padding: 1rem 2rem;
     border-bottom-right-radius: 10px;
     font-size: 1.6rem;
+    &:focus {
+        outline: none;
+    }
+
     @include respond(phone){
         padding: 0.5rem 1rem;
     }
@@ -11,10 +15,19 @@
     &__full {
         background-color: $color-primary-dark;
         color: $color-white;
+
+        &:hover {
+            background-color: $color-primary;
+            
+        }
     }
     &__outline {
         background-color: transparent;
         border: solid 1px $color-primary-dark;
+        &:hover {
+            border: solid 1px $color-green;
+            
+        }
     }
 
 }

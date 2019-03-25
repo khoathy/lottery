@@ -62,15 +62,21 @@ html {
   padding: 1rem 2rem;
   border-bottom-right-radius: 10px;
   font-size: 1.6rem; }
+  .btn:focus {
+    outline: none; }
   @media only screen and (max-width: 37.5em) {
     .btn {
       padding: 0.5rem 1rem; } }
   .btn__full {
     background-color: #6ACCFF;
     color: #fff; }
+    .btn__full:hover {
+      background-color: #9FDAF9; }
   .btn__outline {
     background-color: transparent;
     border: solid 1px #6ACCFF; }
+    .btn__outline:hover {
+      border: solid 1px #83d500; }
 
 .refresh {
   height: 1.2rem;
