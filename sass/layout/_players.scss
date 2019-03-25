@@ -1,0 +1,72 @@
+.section-players {
+    height: 45vh;
+    width: 100vw;
+    background: $color-primary-light;
+    position: relative;
+}
+.heading {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2vh;
+}
+
+.players {
+    margin: 0 auto;
+    text-align: center;
+}
+.players__list {
+    display: inline-block;
+    margin: 1rem auto 2rem;
+    font-size: 95%;
+    @include respond(phone){
+        display: block;
+    }
+}
+.player {
+    width: 65rem;
+    list-style: none;
+    margin-top: 1rem;
+    @include respond(tab-port){
+        width: 82vw;
+    }
+    @include respond(phone){
+        width: 100vw;
+        padding : 0 2rem;
+        margin-top: 1.5rem;
+    }
+    &__key {
+        float: left;
+        width: 55rem;
+        text-align: left;
+        @include respond(tab-port){
+            width: 70vw;
+        }
+        @include respond(phone){
+            width: 100%;
+            text-align: left;
+            font-size: 82%;
+        }
+        
+    }
+    
+    &__balance {
+        float: right;
+        width: 10rem;
+        text-align: right;
+        color: $color-green;
+        @include respond(tab-port){
+            width: 12vw;
+        }
+        @include respond(phone){
+            width: 8rem;
+            text-align: right;
+            padding: 0 3rem;
+            background-color: rgba($color-primary,0.15);
+        }
+        
+    }
+    @include clearfix;
+
+}

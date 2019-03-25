@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title>Lottery | ...</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__logoBox">
+                <img src="img/logo.svg" alt="Lottery logo" class="header__logo">
+            </div>
+        </header>
+
+        <section class="section-enterKey">
+            
+            <form id="" class= "enterKey__form">
+                <div class="enterKey__box">
+                    <input class="enterKey__key" type="text" name="player" required="" placeholder="Enter PLAYER 's private key here" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" autofocus>
+                    <button class="btn btn__full enterKey__submit" value="playerKey" type="submit">Submit</button>
+                </div>
+                <div class="enterKey__box">
+                    <input class="enterKey__key" type="text" name="player" placeholder="Enter ADMIN 's private key here" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" autofocus>
+                    <button class="btn btn__full enterKey__submit" value="adminKey" type="submit">Submit</button>
+                </div>            
+            </form>
+        </section>
+        <section class="section-players">
+            <div class="heading">
+                <h2 class="heading-secondary">Current players</h2>
+                <button class="btn btn__outline btn__refresh" onClick="window.location.reload()"> <span><img src="img/refresh icon.svg" class="refresh" alt="refresh icon"></span>Refresh</button>
+            </div>
+            <div class="players">
+                <ul class="players__list">
+                    <li class="player">
+                        <p class="player__key">c737e1ab1623fde722c04b4f9ccb4ab776bf15932cc72d</p>
+                        <p class="player__balance">$100</p>
+                    </li>
+                    <li class="player">
+                        <p class="player__key">88603fc847e0c013a834253acee5315884d2c4e387ebca</p>
+                        <p class="player__balance">$200</p>
+                    </li>
+                    <li class="player">
+                        <p class="player__key">c8be37d4b33559f784feb16d8e5ffaccf082b3657ea35b</p>
+                        <p class="player__balance">$220</p>
+                    </li>
+                </ul>
+            </div>
+            <img class="decor decor__left" src="img/decor-left.svg" alt="decor">
+            <img class="decor decor__right" src="img/decor-right.svg" alt="decor">
+            
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+    
+</html>

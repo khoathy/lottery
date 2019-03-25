@@ -1,0 +1,13 @@
+.header {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__logo {
+        height: 3.5rem;
+        @include respond(phone){
+            height: 3rem;
+        }
+    }
+}

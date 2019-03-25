@@ -1,0 +1,17 @@
+.decor{
+    position: absolute;
+    max-height: 100%;
+    width: 20%;
+    bottom: 0;
+    opacity: 0.9;
+    &__left {
+        left: 0;
+        
+    }
+    &__right {
+       right: 0;
+    }
+    @include respond(tab-port){
+        display: none;
+    }
+}
