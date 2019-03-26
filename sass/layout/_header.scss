@@ -1,11 +1,12 @@
 .header {
-    height: 30vh;
+    height: 25vh;
     display: flex;
     align-items: center;
     justify-content: center;
 
     &__logo {
         height: 3.5rem;
+        margin-top: 1rem;
         @include respond(phone){
             height: 3rem;
         }
